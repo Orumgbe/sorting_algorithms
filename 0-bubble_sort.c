@@ -11,6 +11,8 @@ void bubble_sort(int *array, size_t size)
 	int temp;
 	size_t i, j, check = 1;
 
+	if (size < 2)
+		return;
 	while (check != 0)
 	{
 		check = 0;
