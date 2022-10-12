@@ -8,15 +8,15 @@
  */
 void selection_sort(int *array, size_t size)
 {
-	size_t j, i, index;
+	size_t j, i, index = 0;
 	int temp, current, min;
 
 	if (size < 2)
 		return;
 	for (j = 0; j < size - 1; j++)
 	{
-		i = j;
 		min = array[j];
+		i = j;
 		while (i < size)
 		{
 			current = array[i];
