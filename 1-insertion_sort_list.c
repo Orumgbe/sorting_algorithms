@@ -13,12 +13,12 @@ void insertion_sort_list(listint_t **list)
 {
 	listint_t *node1, *node2, *current;
 
-	if (*list && (*list)->next)
-	{
-		node1 = *list;
-		node2 = node1->next;
-		current = *list;
-	}
+	if (list == NULL || *list == NULL || (*list)->next == NULL)
+		return;
+
+	node1 = *list;
+	node2 = node1->next;
+	current = *list;
 
 	while (node1 && node2 && current)
 	{
